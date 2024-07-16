@@ -2,9 +2,8 @@ import Biography from "./pages/Biography";
 import Eshop from "./pages/Eshop";
 import Landing from "./pages/Landing";
 import Portfolio from "./pages/Portfolio";
-import React from "react";
 
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 function App() {
   return (
     <Router>
