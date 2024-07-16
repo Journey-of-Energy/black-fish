@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
+import profilePhotoImage from "../assets/Images/Profile_photo.png";
+import tatooGuyImage from "../assets/Images/Tatoo_guy.png";
 
 function Biography() {
   const [leftHovered, setLeftHovered] = useState(false);
@@ -14,8 +16,7 @@ function Biography() {
   };
   const width = window.innerWidth;
   const height = window.innerHeight;
-  const profilePhotoImage = "../src/assets/Images/Profile_photo.png";
-  const tatooGuyImage = "../src/assets/Images/Tatoo_guy.png";
+
   const rightPictureDelayValue = 1.5;
   return (
     <section className="w-screen h-100vh snap-center overflow-y-hidden ">

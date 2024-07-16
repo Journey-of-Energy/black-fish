@@ -1,6 +1,13 @@
 import { Link } from "react-router-dom";
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import headerImage from "../assets/Images/BlackFish_header.svg";
+import tatooGuyImage from "../assets/Images/Tatoo_guy.png";
+import profilePhotoImage from "../assets/Images/Profile_photo.png";
+import storeImage from "../assets/Images/Store_image.png";
+import portfolioText from "../assets/Images/PortfolioText.png";
+import biographyText from "../assets/Images/BiographyText.png";
+import storeText from "../assets/Images/StoreText.png";
 
 const useMousePosition = () => {
   const [mousePosition, setMousePosition] = React.useState({
@@ -42,13 +49,6 @@ function Landing() {
   ) => {
     return (position - maxDistance / 1000) * factor;
   };
-  const headerImage = "../src/assets/Images/BlackFish_header.svg";
-  const tatooGuyImage = "../src/assets/Images/Tatoo_guy.png";
-  const profilePhotoImage = "../src/assets/Images/Profile_photo.png";
-  const storeImage = "../src/assets/Images/Store_image.png";
-  const portfolioText = "../src/assets/Images/PortfolioText.png";
-  const biographyText = "../src/assets/Images/BiographyText.png";
-  const storeText = "../src/assets/Images/StoreText.png";
 
   return (
     <div className=" snap-y snap-mandatory h-screen w-screen overflow-x-hidden ">

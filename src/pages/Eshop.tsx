@@ -1,5 +1,5 @@
+import storeImage from "../assets/Images/Store_image.png";
 function Eshop() {
-  const storeImage = "../assets/Images/Store_image.png";
   return (
     <section className="w-screen h-screen snap-center">
       <div

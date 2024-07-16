@@ -2,7 +2,10 @@ import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { ReactLenis } from "lenis/react";
 import { Link } from "react-router-dom";
-
+import tatooGuyImage from "../assets/Images/Tatoo_guy.png";
+import headerImage from "../assets/Images/BlackFish_header.svg";
+import profilePhotoImage from "../assets/Images/Profile_photo.png";
+import storeImage from "../assets/Images/Store_image.png";
 const ImageComponent = (props: any) => {
   const height = window.innerHeight;
   const width = window.innerWidth;
@@ -85,11 +88,7 @@ function Portfolio() {
   const height = window.innerHeight;
   const width = window.innerWidth;
   const ml = (width / 12) * 2;
-  const tatooGuyImage = "../src/assets/Images/Tatoo_guy.png";
-  const headerImage = "../src/assets/Images/BlackFish_header.svg";
 
-  const profilePhotoImage = "../src/assets/Images/Profile_photo.png";
-  const storeImage = "../src/assets/Images/Store_image.png";
   return (
     <ReactLenis root>
       <section className="w-screen h-screen relative">
