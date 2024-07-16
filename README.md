@@ -25,7 +25,7 @@ Users should be able to:
 
 ### Screenshot
 
-![./public/screens/blackfish.png](../BlackFish/public/screens/blackfish.png)
+![./public/screens/blackfish.png](./public/screens/blackfish.png)
 
 Live Site URL: [Black-Fish](https://main--dadla-tats.netlify.app)
 
