@@ -1,5 +1,5 @@
 function Eshop() {
-  const storeImage = "../../public/Images/Store_image.png";
+  const storeImage = "../assets/Images/Store_image.png";
   return (
     <section className="w-screen h-screen snap-center">
       <div

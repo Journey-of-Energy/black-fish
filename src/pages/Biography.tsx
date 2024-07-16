@@ -14,8 +14,8 @@ function Biography() {
   };
   const width = window.innerWidth;
   const height = window.innerHeight;
-  const profilePhotoImage = "../../public/Images/Profile_photo.png";
-  const tatooGuyImage = "../../public/Images/Tatoo_guy.png";
+  const profilePhotoImage = "../src/assets/Images/Profile_photo.png";
+  const tatooGuyImage = "../src/assets/Images/Tatoo_guy.png";
   const rightPictureDelayValue = 1.5;
   return (
     <section className="w-screen h-100vh snap-center overflow-y-hidden ">

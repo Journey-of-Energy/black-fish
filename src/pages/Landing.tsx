@@ -42,13 +42,13 @@ function Landing() {
   ) => {
     return (position - maxDistance / 1000) * factor;
   };
-  const headerImage = "../../public/Images/BlackFish_header.svg";
-  const tatooGuyImage = "../../public/Images/Tatoo_guy.png";
-  const profilePhotoImage = "../../public/Images/Profile_photo.png";
-  const storeImage = "../../public/Images/Store_image.png";
-  const portfolioText = "../../public/Images/PortfolioText.png";
-  const biographyText = "../../public/Images/BiographyText.png";
-  const storeText = "../../public/Images/StoreText.png";
+  const headerImage = "../src/assets/Images/BlackFish_header.svg";
+  const tatooGuyImage = "../src/assets/Images/Tatoo_guy.png";
+  const profilePhotoImage = "../src/assets/Images/Profile_photo.png";
+  const storeImage = "../src/assets/Images/Store_image.png";
+  const portfolioText = "../src/assets/Images/PortfolioText.png";
+  const biographyText = "../src/assets/Images/BiographyText.png";
+  const storeText = "../src/assets/Images/StoreText.png";
 
   return (
     <div className=" snap-y snap-mandatory h-screen w-screen overflow-x-hidden ">

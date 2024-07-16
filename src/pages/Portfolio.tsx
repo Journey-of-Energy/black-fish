@@ -85,11 +85,11 @@ function Portfolio() {
   const height = window.innerHeight;
   const width = window.innerWidth;
   const ml = (width / 12) * 2;
-  const tatooGuyImage = "../../public/Images/Tatoo_guy.png";
-  const headerImage = "../../public/Images/BlackFish_header.svg";
+  const tatooGuyImage = "../src/assets/Images/Tatoo_guy.png";
+  const headerImage = "../src/assets/Images/BlackFish_header.svg";
 
-  const profilePhotoImage = "../../public/Images/Profile_photo.png";
-  const storeImage = "../../public/Images/Store_image.png";
+  const profilePhotoImage = "../src/assets/Images/Profile_photo.png";
+  const storeImage = "../src/assets/Images/Store_image.png";
   return (
     <ReactLenis root>
       <section className="w-screen h-screen relative">
