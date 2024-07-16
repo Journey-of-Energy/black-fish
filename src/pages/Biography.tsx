@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
 
 function Biography() {
@@ -6,10 +6,10 @@ function Biography() {
   const [rightHovered, setRightHovered] = useState(false);
   const [leftPicked, setLeftPicked] = useState(false);
   const [rightPicked, setRightPicked] = useState(false);
-  const hoveredLeft = (state) => {
+  const hoveredLeft = (state: any) => {
     setLeftHovered(state);
   };
-  const hoveredRight = (state) => {
+  const hoveredRight = (state: any) => {
     setRightHovered(state);
   };
   const width = window.innerWidth;

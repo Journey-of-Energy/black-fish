@@ -1,5 +1,3 @@
-import React from "react";
-
 function Eshop() {
   const storeImage = "../../public/Images/Store_image.png";
   return (

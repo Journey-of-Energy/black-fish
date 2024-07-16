@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { ReactLenis } from "lenis/react";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const ImageComponent = (props: any) => {
   const height = window.innerHeight;
@@ -48,7 +48,7 @@ const useMousePosition = () => {
   });
 
   React.useEffect(() => {
-    const updateMousePosition = (ev) => {
+    const updateMousePosition = (ev: any) => {
       setMousePosition({ x: ev.clientX, y: ev.clientY });
     };
 
@@ -64,18 +64,22 @@ const useMousePosition = () => {
 function Portfolio() {
   const [mouseX, setMouseX] = useState(0);
   const [mouseY, setMouseY] = useState(0);
-  const [paralaxX, setParalaxX] = useState(0);
+
   const mousePosition = useMousePosition();
   const stringPos = JSON.stringify(mousePosition);
   useEffect(() => {
     const x = mousePosition.x;
     const y = mousePosition.y;
-    setMouseX(x);
-    setMouseY(y);
+    x ? setMouseX(x) : null;
+    y ? setMouseY(y) : null;
     console.log(mouseX);
   }, [stringPos]);
 
-  const calculateParalax = (position, maxDistance, factor) => {
+  const calculateParalax = (
+    position: any,
+    maxDistance: any,
+    factor: number
+  ) => {
     return (position - maxDistance / 1000) * factor;
   };
   const height = window.innerHeight;
