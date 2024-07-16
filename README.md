@@ -1,31 +1,52 @@
-# React + TypeScript + Vite
+# EnergyCode - Black-fish
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+! THIS SITE IS WORK IN PROGRESS !
 
-Currently, two official plugins are available:
+This website was designed and developed by me!
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Table of contents
 
-## Expanding the ESLint configuration
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Overview
 
-- Configure the top-level `parserOptions` property like this:
+### The challenge
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+Users should be able to:
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
-# black-fish
+- View the optimal layout for each of the website's pages depending on their device's screen size
+- See hover states for all interactive elements on the page
+- View each page and be able to toggle between the tabs to see new information
+
+### Screenshot
+
+![](../BlackFish/public/screens/blackfish.png)
+
+Live Site URL: [Add live site URL here](https://main--dadla-tats.netlify.app)
+
+## My process
+
+- I designed my own design in Figma
+- Started by creating a basic layout.
+- Added animations with Framer Motion to create smooth and interactive user experiences.
+- In the future, I will add descriptions.
+
+### Built with
+
+- React.js
+- Tailwind
+- Vite
+- Framer motion
+- [React](https://reactjs.org/) - JS library
+
+### What I learned
+
+- Multi-page Web Techniques: Implemented multi-page functionality using React Router.
+- Responsive Design: I used responsive techniques using CSS.
+- Framer Motion: Applied Framer Motion for basic animations and transitions, improving the interactivity and smoothness of the UI.
+- I learned how to create seamless transitions between pages.
