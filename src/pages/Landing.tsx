@@ -84,11 +84,12 @@ function Landing() {
 
               y: calculateParalax(mouseY, window.innerHeight, -0.005),
               x: calculateParalax(mouseX, window.innerWidth, -0.005),
+              zIndex: 20,
             }}
           />
         </div>
 
-        <div className="w-full h-full col-span-12 row-start-1 row-end-7">
+        <div className="w-full h-full col-span-12 row-start-1 row-end-7 ">
           <Link to={"/portfolio"}>
             <div
               className="w-full h-full "
@@ -97,6 +98,7 @@ function Landing() {
                 backgroundSize: "cover",
                 backgroundRepeat: "no-repeat",
                 backgroundPosition: "center",
+                scale: 1.2,
               }}
             />
           </Link>

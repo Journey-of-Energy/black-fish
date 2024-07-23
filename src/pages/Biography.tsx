@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { motion } from "framer-motion";
+import { motion, transform } from "framer-motion";
 import profilePhotoImage from "../assets/Images/Profile_photo.png";
 import tatooGuyImage from "../assets/Images/Tatoo_guy.png";
 import headerImage from "../assets/Images/BlackFish_header.svg";
@@ -26,7 +26,7 @@ const DescriptionContainer: React.FC<DescriptionContainerProps> = (props) => {
   };
   return (
     <motion.div
-      className="absolute w-full h-[70%] l-0 bottom-0 px-[20%] py-32 bg-backround-light z-20"
+      className="fixed w-full h-[70%] l-0 bottom-0 laptop:px-[20%] mobile:px-[0] laptop:py-32 mobile:py-8 bg-backround-light z-20"
       initial={{ y: "100%", opacity: 0 }}
       animate={{
         y: leftPicked || rightPicked ? "0%" : "100%",
@@ -38,14 +38,14 @@ const DescriptionContainer: React.FC<DescriptionContainerProps> = (props) => {
       }}
     >
       <div className="flex flex-col items-center">
-        <h1 className="text-primary-light text-[96px] text-center mb-8">
+        <h1 className="text-primary-light laptop:text-[96px] mobile:text-[64px] text-center mb-8 font-plex-serif font-light">
           {leftPicked
             ? descriptions.dadla.dadlaHeading
             : rightPicked
             ? descriptions.blackfish.blackfishHeading
             : null}
         </h1>
-        <p className="text-white w-1/2 ">
+        <p className="text-white laptop:w-1/2 mobile:w-3/4 laptop:text-lg mobile:text-sm font-plex-serif">
           {leftPicked
             ? descriptions.dadla.dadlaDescription
             : rightPicked
@@ -75,7 +75,7 @@ function Biography() {
 
   const rightPictureDelayValue = 1.5;
   return (
-    <section className="w-screen h-100vh snap-center overflow-y-hidden ">
+    <section className="w-screen h-screen  snap-center overflow-hidden ">
       <div className="w-full h-full absolute  flex items-center justify-center pointer-events-none">
         <motion.div
           className="w-[35%] h-[35%]
@@ -91,10 +91,11 @@ function Biography() {
             scale: 1,
             opacity: picked.leftPicked || picked.rightPicked ? 0 : 1,
           }}
+          transition={{ delay: 1 }}
         />
         <Link
           to={"/"}
-          className="w-96 h-96 z-50 pointer-events-auto cursor-pointer"
+          className="w-[35%] h-[35%]  z-50 pointer-events-auto cursor-pointer"
         />
       </div>
       {/* Description container */}
@@ -122,12 +123,12 @@ function Biography() {
           }));
         }}
       >
-        <h1 className="text-[96px] text-primary-light fixed bottom-0 z-20 cursor-pointer">
+        <h1 className="laptop:text-[96px] mobile:text-[48px] text-primary-light fixed bottom-0 z-20 cursor-pointer font-plex-serif font-thin">
           Back
         </h1>
       </motion.div>
 
-      <div className="w-full h-full flex">
+      <div className="w-full h-full  flex">
         {/* Left Image */}
         <motion.div
           onClick={() => {
