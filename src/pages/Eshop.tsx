@@ -1,4 +1,3 @@
-import storeImage from "../assets/Images/Store_image.png";
 function ProductContainer() {
   return (
     <div className="w-full h-[40vh] flex flex-col justify-between">

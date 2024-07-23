@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { motion, transform } from "framer-motion";
+import { motion } from "framer-motion";
 import profilePhotoImage from "../assets/Images/Profile_photo.png";
 import tatooGuyImage from "../assets/Images/Tatoo_guy.png";
 import headerImage from "../assets/Images/BlackFish_header.svg";
